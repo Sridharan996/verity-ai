@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error":"#ffffff","inverse-surface":"#213145","on-primary":"#ffffff","on-primary-fixed":"#0d1c32","on-secondary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","on-surface-variant":"#44474d","on-primary-container":"#76849f","inverse-on-surface":"#eaf1ff","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","secondary-fixed":"#ffdcc3","tertiary":"#000000","tertiary-fixed-dim":"#b4c5ff","inverse-primary":"#b9c7e4","primary-container":"#0d1c32","on-secondary-fixed":"#2f1500","secondary":"#904d00","primary-fixed":"#d6e3ff","error-container":"#ffdad6","tertiary-container":"#00174b","on-tertiary-container":"#497cff","on-background":"#0b1c30","surface-tint":"#515f78","error":"#ba1a1a","outline":"#75777e","on-surface":"#0b1c30","outline-variant":"#c5c6cd","on-error-container":"#93000a","background":"#f8f9ff","on-tertiary-fixed":"#00174b","on-tertiary-fixed-variant":"#003ea8","primary":"#000000","secondary-container":"#fe932c","primary-fixed-dim":"#b9c7e4","on-primary-fixed-variant":"#39475f","surface":"#f8f9ff","secondary-fixed-dim":"#ffb77d","surface-bright":"#f8f9ff","surface-container-highest":"#d3e4fe","surface-container-high":"#dce9ff","surface-variant":"#d3e4fe","surface-container":"#e5eeff","tertiary-fixed":"#dbe1ff","surface-dim":"#cbdbf5","on-tertiary":"#ffffff","on-secondary-container":"#663500"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem",gutter:"1.25rem","space-xl":"2.25rem","margin-mobile":"1rem","space-sm":"0.5rem",margin:"2rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-mobile":"0.75rem"},fontFamily:{"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"metric-stat":["Plus Jakarta Sans"],"label-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"]},fontSize:{"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"metric-stat":["28px",{lineHeight:"32px",fontWeight:"800"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"600"}],"display-hero-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"display-hero":["44px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl-mobile":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-xl":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="VERITY AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WH-BdGVZ2w9WvIkoIMliVssWckcpYzc9F_u_FvI96ORYhb_s1j7tHq4HAqIN0uUfosJWPXoc6UhMQauvqAcfRoOLVhN0aNzGSW-CDWPxflQ898V9gR5a72K1ZUexal5puWyH10Bnmv6r6yNU-tB0bSLY37azDHMd8xqTCrhy-bU3gMszWyPcnQiiTf-KOpbM8s4NsScplJI5poBEXg-wh-IxNrt0Ehf7H_07Dqpoeo"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight">VERITY AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">AICTE Regulatory Core</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">REGULATORY PORTAL</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">v4.2-SEC</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-xs"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="applications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Applications</span></div><span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface">142</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="document-verification" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified</span><span>Document Verification</span></div><span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">18</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="compliance-check" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">rule</span><span>Compliance Check</span></div><span class="px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">7</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="infrastructure-analysis" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Infrastructure Analysis</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verification-results" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Verification Results</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reports-and-audit-trail" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">history_edu</span><span>Reports &amp; Audit Trail</span></div></a><div class="my-space-sm px-space-sm"><div class="h-px bg-surface-container-high w-full"></div></div><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="institution-portal" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">domain</span><span>Institution Portal</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Ext</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="profile-and-settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span>Profile &amp; Settings</span></div></a></nav></div></div><div class="p-space-md bg-surface-container-low m-space-md rounded-xl"><div class="flex items-center justify-between mb-space-xs"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">VERITY Core v4.2</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Advisory</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">OCR, GeoTag &amp; Norms Audit Engine Active</p><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">speed</span> 24ms</span><a class="text-secondary hover:text-on-surface font-medium inline-flex items-center gap-0.5" href="#">Help Center <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-medium">AICTE Ministry Portal - Live Academic Cycle 2026-27</span></div><div class="relative flex-1 hidden md:block max-w-md"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-colors" placeholder="Search applications, institutions, documents..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center px-space-md py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[16px] mr-1.5 text-on-surface-variant">badge</span>Role: AICTE Official</div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface leading-tight">Dr. R. Sharma</div><div class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Director Tech Approvals</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIWL7DnJzqdMWAQS01FoyFg1VpwtF5C1hrWPGfJpzC5-MiR6vGQWwUa7QALPb_w-oGGIrVGoWX2TCQuwnDuayC8wtRAfE4toBDzvd_4DrAlxzugibeatnnQTyIVAY7Qj0IKlpUVuQDZlwoWDtp6XoBEP4u-MHKgX-iZ-xVYrc_I3H7K1DHjB0YCVn28k5KGLgxJA7GmpwZXob3nWQCMkUi8Acnscef5z-y3qmOU9c"/><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-margin space-y-space-lg">
+<!-- Welcome Header / Regulatory Canvas Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="absolute right-36 bottom-0 w-48 h-48 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+<span>Wednesday, 20 Oct 2026 | Make Higher Education Stronger</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Welcome back, Dr. Sharma</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">• AICTE Regulatory Oversight Desk</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            AICTE Application Validation Dashboard. Instant autonomous norms audit, OCR title deed verification, and faculty biometric cadre scrutiny for AY 2026-27.
+          </p>
+</div>
+<!-- Quick Access Meta Panel -->
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<div class="flex items-center gap-3 px-space-md py-space-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Active Regulatory Cycle</div>
+<div class="font-headline-md text-headline-md text-on-surface">AY 2026-27 • Phase II</div>
+</div>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface-variant transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Gazette</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Key Metric KPI Stat Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- Total Applications -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Applications</div>
+<div class="font-metric-stat text-metric-stat text-on-surface mt-1">248</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">all_inbox</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-bold">+12%</span>
+<span class="text-on-surface-variant">vs last cycle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% Volume</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<!-- Verified -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verified</div>
+<div class="font-metric-stat text-metric-stat text-on-surface mt-1">142</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-bold">57%</span>
+<span class="text-on-surface-variant">of total audited</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Norms Satisfied</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 57.2%"></div>
+</div>
+</div>
+<!-- Pending Review -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending Review</div>
+<div class="font-metric-stat text-metric-stat text-on-surface mt-1">68</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-bold">27%</span>
+<span class="text-on-surface-variant">in algorithmic queue</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLA &lt; 24h</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 27.4%"></div>
+</div>
+</div>
+<!-- Flagged / Deficiencies -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Flagged / Deficiencies</div>
+<div class="font-metric-stat text-metric-stat text-error mt-1">38</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">report_problem</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-bold">15%</span>
+<span class="text-on-surface-variant">requires scrutiny</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold">Immediate Action</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 15.3%"></div>
+</div>
+</div>
+</section>
+<!-- Main Grid Section (70% Scrutiny Roster / 30% Analytical Cockpit) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Recent Applications & Deep Scrutiny Table (70% ~ 8 cols on desktop) -->
+<section class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<!-- Table Header Controls -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Recent Applications</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scrutiny queue updated in real-time across Western, Southern, and Northern AICTE regions</p>
+</div>
+<!-- Quick Filter Chips -->
+<div class="flex flex-wrap items-center gap-1.5" id="tableFilterChips">
+<button class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm transition-colors">All (248)</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Verified (142)</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Review (68)</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Flagged (38)</button>
+</div>
+</div>
+<!-- Table Wrapper -->
+<div class="overflow-x-auto -mx-space-md px-space-md">
+<table class="w-full text-left min-w-[720px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-2.5 px-3 rounded-l-lg">#</th>
+<th class="py-2.5 px-3">Institution Name</th>
+<th class="py-2.5 px-3">Application ID</th>
+<th class="py-2.5 px-3">Category/Type</th>
+<th class="py-2.5 px-3">Submission</th>
+<th class="py-2.5 px-3">Status</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3 font-label-sm text-on-surface-variant">01</td>
+<td class="py-3 px-3">
+<div class="font-headline-md text-[13px] text-on-surface font-semibold">Sri Venkateswara College of Engineering</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Autonomous • Tamil Nadu Region</div>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">AICTE-EOA-2026-001</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Extension of Approval</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">22 Oct 2026</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      Under Review
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Dossier">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-secondary hover:bg-secondary-fixed transition-colors" title="Execute Scrutiny">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" title="Flag Deficiency">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3 font-label-sm text-on-surface-variant">02</td>
+<td class="py-3 px-3">
+<div class="font-headline-md text-[13px] text-on-surface font-semibold">Kumaraguru College of Technology</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Non-Minority • Coimbatore Hub</div>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">AICTE-EOA-2026-002</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Extension of Approval</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">21 Oct 2026</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      Verified
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Dossier">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface hover:bg-surface-container transition-colors" title="Certified Approval">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" title="Flag Deficiency">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3 font-label-sm text-on-surface-variant">03</td>
+<td class="py-3 px-3">
+<div class="font-headline-md text-[13px] text-on-surface font-semibold">PSG College of Technology</div>
+<div class="font-body-sm text-[11px] text-error">Cadre Deficiency Detected (Faculty Ratio)</div>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">AICTE-EOA-2026-003</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Increase in Intake</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">20 Oct 2026</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                      Flagged
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Dossier">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-error hover:bg-error-container transition-colors" title="Draft Deficiency Notice">
+<span class="material-symbols-outlined text-[18px]">announcement</span>
+</button>
+<button class="p-1 rounded text-on-surface hover:bg-surface-container transition-colors" title="Inspection Panel Dispatch">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3 font-label-sm text-on-surface-variant">04</td>
+<td class="py-3 px-3">
+<div class="font-headline-md text-[13px] text-on-surface font-semibold">Bannari Amman Institute of Tech</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">M.Tech AI &amp; Robotics Specialization</div>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">AICTE-EOA-2026-004</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">New Programme</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">19 Oct 2026</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                      Pending
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Dossier">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-secondary hover:bg-secondary-fixed transition-colors" title="Review Norms">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" title="Flag Deficiency">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3 font-label-sm text-on-surface-variant">05</td>
+<td class="py-3 px-3">
+<div class="font-headline-md text-[13px] text-on-surface font-semibold">Sona College of Technology</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Established 1997 • Zero Non-Compliance</div>
+</td>
+<td class="py-3 px-3 font-mono text-[12px] text-on-surface-variant">AICTE-EOA-2026-005</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Extension of Approval</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">18 Oct 2026</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      Verified
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Dossier">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface hover:bg-surface-container transition-colors" title="Certified Approval">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-error-container transition-colors" title="Flag Deficiency">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Pagination / Ledger Status -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span>Showing 1 to 5 of 248 Regulatory Packets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px]">Ledger Sync: 99.98%</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors disabled:opacity-50" disabled="">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-semibold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">50</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Operational Field Context Banner -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-start gap-space-sm">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0" data-alt="Close up architectural blueprint scan of an engineering university campus with digital holographic verification points and AI coordinate overlays in deep navy and amber hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs8T6DOQsybt2ufeim7QVS9ECtDSMNoEQby54tXNpbS1oa2zV-1PVC76ZX5myw1LqGZ_AliOC9SUL7--4ME2igXW4Jy4k__md_aXvViFxVNI0wyMimQtaKY9XHIHj46BuIcnlcvABDZHrZqcEEfvU5z1k_XQaUwRtDOIpqPg2Qy2Xf6TlNXbs2fExma_GRjYl8HfwmrLnE4c7DMSGJ6R9SUhZxKj6sZohtCbXhvLQ"/>
+<div>
+<div class="font-headline-md text-[14px] text-on-surface">Satellite &amp; Land Deed Geofence</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Autonomous GIS matching confirms 42 institutions comply with urban contiguous land norms (7.5 acres minimum).</p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-start gap-space-sm">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0" data-alt="High tech computer science laboratory at a premier institute with high end servers robotics equipment and digital audit indicators under clean lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB12B9H4IF3L3hkAiAeJqrwWhuK433vCdEEVTnFPnD_KBIfOsBuqYLR_CXte518XOptp-b5o_WZ4s85mMeE60-bgT9Mi0Yq5gy11-PvwKpVECsiQpWU9qfdFdmxfoV8cKZjUjs1zwutrKInBjdJG81Z-rHEW8pF5z32FSpUFNPvJJaj38E34HGkciJW90QXgpWh5grSc5d3Yw7E9524kL6V0pnoyGDKKmXwdL4_iOA"/>
+<div>
+<div class="font-headline-md text-[14px] text-on-surface">Laboratory Equipment Cadre Scan</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">1,480 lab invoices validated via GST-eInvoice ledger integration. 3 alerts regarding obsolete equipment depreciations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Distribution Chart, Quick Actions & Alerts (30% ~ 4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Application Status Distribution (Donut / Ring Visual) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Status Distribution</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-mono">248 TOTAL</span>
+</div>
+<div class="flex items-center justify-center py-space-sm">
+<!-- Inline SVG Ring Chart (Exact Values: 142/248=57.2%, 68/248=27.4%, 38/248=15.3%) -->
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Background track -->
+<circle class="stroke-surface-container-low fill-none" cx="50" cy="50" r="38" stroke-width="12"></circle>
+<!-- Verified: 57.2% -> Dasharray 136.6 238.7 -->
+<circle class="stroke-secondary fill-none" cx="50" cy="50" r="38" stroke-dasharray="136.6 238.7" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Pending: 27.4% -> Dasharray 65.4 238.7 -->
+<circle class="stroke-secondary-container fill-none" cx="50" cy="50" r="38" stroke-dasharray="65.4 238.7" stroke-dashoffset="-136.6" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Flagged: 15.3% -> Dasharray 36.5 238.7 -->
+<circle class="stroke-error fill-none" cx="50" cy="50" r="38" stroke-dasharray="36.5 238.7" stroke-dashoffset="-202" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold leading-none">248</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wide mt-1">Dossiers</span>
+</div>
+</div>
+</div>
+<!-- Ring Breakdown Legend -->
+<div class="space-y-2 mt-space-xs">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Verified (Norms Cleared)</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-label-sm text-on-surface">
+<span class="font-bold">142</span>
+<span class="text-on-surface-variant font-normal">57%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Pending Algorithm Review</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-label-sm text-on-surface">
+<span class="font-bold">68</span>
+<span class="text-on-surface-variant font-normal">27%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Flagged Deficiencies</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-label-sm text-error">
+<span class="font-bold">38</span>
+<span class="text-on-surface-variant font-normal">15%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Regulatory Actions Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Quick Actions</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">bolt</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">search_check</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">New Scrutiny</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:scale-110 transition-transform">batch_prediction</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Batch Verify</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:scale-110 transition-transform">rule</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Compliance Check</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-error group-hover:scale-110 transition-transform">forward_to_inbox</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Notice Dispatch</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">receipt_long</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Audit Report</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex flex-col justify-between h-20 group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:scale-110 transition-transform">history_edu</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Audit Trail</span>
+</button>
+</div>
+</div>
+<!-- Recent AI Findings & Alerts Feed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Recent AI Findings &amp; Alerts</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">LIVE FEED</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Alert 1 -->
+<div class="p- space-sm p-3 rounded-lg bg-surface-container-low border-l-4 border-error">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                  Discrepancy Detected
+                </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">14 mins ago</span>
+</div>
+<p class="font-headline-md text-[13px] text-on-surface font-semibold mt-1">PSG College of Technology</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Faculty Cadre Ratio Mismatch detected (-2 Assoc Prof in Dept of Artificial Intelligence &amp; Data Science).</p>
+<div class="mt-2 flex items-center gap-2">
+<button class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold hover:bg-error hover:text-on-error transition-colors">Issue Show-Cause</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-[11px] hover:bg-surface-container-high transition-colors">Inspect Biometrics</button>
+</div>
+</div>
+<!-- Alert 2 -->
+<div class="p- space-sm p-3 rounded-lg bg-surface-container-low border-l-4 border-secondary">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Title Clearance Verified
+                </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">1 hour ago</span>
+</div>
+<p class="font-headline-md text-[13px] text-on-surface font-semibold mt-1">Vellore Institute of Technology</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Land title deed verification completed with zero encumbrance via State Revenue Registry OCR API.</p>
+<div class="mt-2 flex items-center gap-2">
+<button class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-[11px] hover:bg-surface-container transition-colors">Download Certificate</button>
+</div>
+</div>
+<!-- Alert 3 -->
+<div class="p- space-sm p-3 rounded-lg bg-surface-container-low border-l-4 border-secondary-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">satellite_alt</span>
+                  GeoTag Verification
+                </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">3 hours ago</span>
+</div>
+<p class="font-headline-md text-[13px] text-on-surface font-semibold mt-1">Thiagarajar College of Engineering</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-resolution drone ortho-mosaic matched floor plans for 2 new engineering workshops.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick micro-interactions for Table Filter Buttons
+    const filterButtons = document.querySelectorAll('#tableFilterChips button');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-primary-container', 'text-on-primary');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        button.classList.add('bg-primary-container', 'text-on-primary');
+        button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+  })();
+</script></main></div></body></html>

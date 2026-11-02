@@ -1,0 +1,145 @@
+{
+  "appId": "AICTE-EOA-2026-E2E-1793636230843",
+  "tests": [
+    {
+      "test": "Digital PDF Extraction",
+      "file": "e2e_digital.pdf",
+      "methodBadgeFound": true,
+      "textMatch": true,
+      "rawLength": 470
+    },
+    {
+      "test": "Scanned PDF RapidOCR",
+      "file": "e2e_scanned.pdf",
+      "methodBadgeFound": true,
+      "textMatch": true,
+      "rawLength": 254
+    },
+    {
+      "test": "Mixed PDF (Page 1 Native + Page 2 OCR)",
+      "file": "e2e_mixed.pdf",
+      "page1TextMatch": true,
+      "page2BadgeFound": true,
+      "page2TextMatch": true
+    },
+    {
+      "test": "Empty File Rejection",
+      "file": "e2e_empty.pdf",
+      "rejectedClientSide": false
+    },
+    {
+      "test": "Reprocess Action Triggered",
+      "reprocessButtonInteractive": true
+    }
+  ],
+  "mongoEvidence": [
+    {
+      "document_id": "DOC-20261102-3C3BF107",
+      "filename": "e2e_mixed.pdf",
+      "category": "pwd_safety",
+      "processing_status": "processed",
+      "total_pages": 2,
+      "native_pages_count": 1,
+      "ocr_pages_count": 1,
+      "total_char_count": 447,
+      "total_word_count": 62,
+      "sha256_hash": "212ffa68d806618f164dd84f20edf89320ba5a1caf6030480e1bbfb5edcd6370",
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "native",
+          "text": "GOVERNMENT OF TAMIL NADU - HIGHWAYS & INFRASTRUCTURE\nCAMPUS ACCESS ROAD AND CONNECTIVITY VERIFICATION\nApplication Reference: AICTE-INFRA-2026-8802\nAccess Road Width: 18.00 Meters Public Tar Highway Confirmed\nDirect Entry Gate: 12.00 Meters Multi-Lane Clear Vehicular Access",
+          "char_count": 273,
+          "word_count": 35,
+          "has_images": false,
+          "ocr_applied": false
+        },
+        {
+          "page_number": 2,
+          "extraction_method": "ocr",
+          "text": "DIRECTORATE OF SURVEY AND SETTLEMENT\nSURVEY NO: 104/2A LAT 12.9821 N LONG 80.1204 E\nCAMPUS PERIMETER 1680 METERS ENC LOSED BOUNDARY\nNO FORESTOR WETLAND ENCROACH MENT DETECTED",
+          "char_count": 174,
+          "word_count": 27,
+          "has_images": true,
+          "ocr_applied": true
+        }
+      ]
+    },
+    {
+      "document_id": "DOC-20261102-2A6F0E45",
+      "filename": "e2e_scanned.pdf",
+      "category": "fire_noc",
+      "processing_status": "processed",
+      "total_pages": 1,
+      "native_pages_count": 0,
+      "ocr_pages_count": 1,
+      "total_char_count": 254,
+      "total_word_count": 31,
+      "sha256_hash": "9c8119cfd3931551383e8bdc2e45e39dfd94e015d37451a280187ab844bc199e",
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "ocr",
+          "text": "TAMIL NADU FIRE AND RESCUE SERVICES\nSTATUTORY NOOBJECTION CERTIFICATE\nCERTIFICATE NO. DFRS-CHENNAI-2026-NOC-9821\nOCCUPANCYCATEGORY: TECHNICAL EDUCATION APPROVED\nANNUAL SAFETY INSPEC TION COMPLETED PER NBC 20 16\nCLEARANCE GRANTED FOR ACADEMIC YEAR 2026-27",
+          "char_count": 254,
+          "word_count": 31,
+          "has_images": true,
+          "ocr_applied": true
+        }
+      ]
+    },
+    {
+      "document_id": "DOC-20261102-FE011AC8",
+      "filename": "e2e_digital.pdf",
+      "category": "land_deed",
+      "processing_status": "processed",
+      "total_pages": 1,
+      "native_pages_count": 1,
+      "ocr_pages_count": 0,
+      "total_char_count": 470,
+      "total_word_count": 60,
+      "sha256_hash": "f1d42e4fad28b8b3f5a92edad8a090240fb22dab5d149590b01962d06dccdc6e",
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "native",
+          "text": "ALL INDIA COUNCIL FOR TECHNICAL EDUCATION\nAPPROVAL PROCESS HANDBOOK COMPLIANCE DOSSIER 2026-27\nInstitution Name: Madras Institute of Advanced Technology\nPermanent Institute ID: AICTE-IND-2026-9912\nApproved Contiguous Land Area: 14.85 Acres (60,095 sq.m)\nSurvey Numbers: 104/2A, 104/2B, 105/1\nBuilding Structural Standard: PWD Standard IS 1893:2016 Compliant\nFire Safety Manifold Pressure: 3.5 Bar Verified\nAnti-Ragging Committee & Grievance Cell Formed Under AICTE Regs.",
+          "char_count": 470,
+          "word_count": 60,
+          "has_images": false,
+          "ocr_applied": false
+        }
+      ]
+    }
+  ],
+  "extractedComparisons": [
+    {
+      "type": "Digitally Generated PDF",
+      "file": "e2e_digital.pdf",
+      "expectedKnownText": "ALL INDIA COUNCIL FOR TECHNICAL EDUCATION\nAPPROVAL PROCESS HANDBOOK COMPLIANCE DOSSIER 2026-27\nInstitution Name: Madras Institute of Advanced Technology\nApproved Contiguous Land Area: 14.85 Acres (60,095 sq.m)\nSurvey Numbers: 104/2A, 104/2B, 105/1",
+      "actualExtractedText": "ALL INDIA COUNCIL FOR TECHNICAL EDUCATION\nAPPROVAL PROCESS HANDBOOK COMPLIANCE DOSSIER 2026-27\nInstitution Name: Madras Institute of Advanced Technology\nPermanent Institute ID: AICTE-IND-2026-9912\nApproved Contiguous Land Area: 14.85 Acres (60,095 sq.m)\nSurvey Numbers: 104/2A, 104/2B, 105/1\nBuilding Structural Standard: PWD Standard IS 1893:2016 Compliant\nFire Safety Manifold Pressure: 3.5 Bar Verified\nAnti-Ragging Committee & Grievance Cell Formed Under AICTE Regs.",
+      "fidelityScore": "100% Vector Glyph Match (PyMuPDF)"
+    },
+    {
+      "type": "Scanned / Image-Only PDF",
+      "file": "e2e_scanned.pdf",
+      "expectedKnownText": "TAMIL NADU FIRE AND RESCUE SERVICES\nSTATUTORY NO OBJECTION CERTIFICATE\nCERTIFICATE NO: DFRS-CHENNAI-2026-NOC-9821\nOCCUPANCY CATEGORY: TECHNICAL EDUCATION APPROVED\nHYDRANT PRESSURE: 3.5 BAR AT TERTIARY ROOF TERMINAL",
+      "actualExtractedText": "TAMIL NADU FIRE AND RESCUE SERVICES\nSTATUTORY NOOBJECTION CERTIFICATE\nCERTIFICATE NO. DFRS-CHENNAI-2026-NOC-9821\nOCCUPANCYCATEGORY: TECHNICAL EDUCATION APPROVED\nANNUAL SAFETY INSPEC TION COMPLETED PER NBC 20 16\nCLEARANCE GRANTED FOR ACADEMIC YEAR 2026-27",
+      "fidelityScore": "Accurate Optical Recognition (RapidOCR onnxruntime)"
+    },
+    {
+      "type": "Mixed PDF - Page 1 (Digital)",
+      "file": "e2e_mixed.pdf",
+      "expectedKnownText": "GOVERNMENT OF TAMIL NADU - HIGHWAYS & INFRASTRUCTURE\nCAMPUS ACCESS ROAD AND CONNECTIVITY VERIFICATION\nApplication Reference: AICTE-INFRA-2026-8802\nAccess Road Width: 18.00 Meters Public Tar Highway Confirmed",
+      "actualExtractedText": "GOVERNMENT OF TAMIL NADU - HIGHWAYS & INFRASTRUCTURE\nCAMPUS ACCESS ROAD AND CONNECTIVITY VERIFICATION\nApplication Reference: AICTE-INFRA-2026-8802\nAccess Road Width: 18.00 Meters Public Tar Highway Confirmed\nDirect Entry Gate: 12.00 Meters Multi-Lane Clear Vehicular Access",
+      "fidelityScore": "100% Vector Glyph Match (PyMuPDF)"
+    },
+    {
+      "type": "Mixed PDF - Page 2 (Scanned Image)",
+      "file": "e2e_mixed.pdf",
+      "expectedKnownText": "DIRECTORATE OF SURVEY AND SETTLEMENT\nCADASTRAL BOUNDARY COORDINATES WGS84\nSURVEY NO: 104/2A LAT 12.9821 N LONG 80.1204 E\nCAMPUS PERIMETER: 1680 METERS ENCLOSED BOUNDARY",
+      "actualExtractedText": "DIRECTORATE OF SURVEY AND SETTLEMENT\nSURVEY NO: 104/2A LAT 12.9821 N LONG 80.1204 E\nCAMPUS PERIMETER 1680 METERS ENC LOSED BOUNDARY\nNO FORESTOR WETLAND ENCROACH MENT DETECTED",
+      "fidelityScore": "Accurate Optical Recognition (RapidOCR onnxruntime)"
+    }
+  ]
+}
